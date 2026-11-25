@@ -12,3 +12,4 @@ def test_verificacion_es_solo_lectura():
     assert "show ip interface brief" in comandos
     assert "show running-config interface Loopback99" in comandos
     assert all(comando.strip().lower().startswith("show") for comando in comandos)
+# verifica loopback99
